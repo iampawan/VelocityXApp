@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         [
           ThreeDots().py16(),
           VelocityApp.utilityText.text.teal500.center.xl3.wide.make(),
-          VelocityApp.rapidText.text.semiBold.center.xl3.wide.orange500.make(),
+          VelocityApp.rapidText.text.semiBold.center.xl3.wide.red500.make(),
           20.heightBox,
           VelocityApp.giantFrameworkText.text.center.xl.wide.gray700.make(),
           20.heightBox,
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
           CodeBox("import 'package:velocity_x/velocity_x.dart' ;".text.center.wide.white.make()),
         ],
         crossAlignment: CrossAxisAlignment.center,
-      ).w64(context).centered().scrollVertical(),
+      ).w64(context).centered().scrollVertical(physics: BouncingScrollPhysics()),
     );
   }
 }
@@ -64,7 +64,7 @@ class ThreeDots extends StatelessWidget {
     return [
       15.squareBox.box.teal400.roundedFull.make(),
       5.widthBox,
-      15.squareBox.box.orange400.roundedFull.make(),
+      15.squareBox.box.red400.roundedFull.make(),
       5.widthBox,
       15.squareBox.box.blue400.roundedFull.make()
     ].hStack();

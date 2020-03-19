@@ -12,7 +12,7 @@ class VelocityScaffold extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: title.text.xl2.make(),
-        backgroundColor: VelocityX.orangeColor500,
+        backgroundColor: VelocityX.redColor500,
         elevation: 0.0,
       ),
       drawer: VelocityDrawer(),

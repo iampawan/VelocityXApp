@@ -220,7 +220,7 @@ class ColorsPage extends StatelessWidget {
             MyColor(VelocityX.pinkColor900, "Pink900", VelocityX.pink900),
           ],
         ),
-      ]).p16().scrollVertical(),
+      ]).p16().scrollVertical(physics: BouncingScrollPhysics()),
     );
   }
 }
@@ -238,7 +238,7 @@ class ColorBox extends StatelessWidget {
         direction: Axis.horizontal,
         children: children.map((m) {
           return [
-            VelocityBox().height(50).width(50).rounded.color(m.color).shadowLg.make(),
+            VelocityBox().height(50).width(50).rounded.color(m.color).make(),
             10.widthBox,
             [m.name.text.lg.make(), 5.heightBox, m.hex.text.gray600.make()].vStack()
           ].hStack(crossAlignment: CrossAxisAlignment.start);

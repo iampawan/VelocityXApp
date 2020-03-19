@@ -93,7 +93,7 @@ class VelocityDrawer extends StatelessWidget {
             onTap: () {},
           ),
         ],
-      ).box.orange500.make(),
+      ).box.red600.make(),
     );
   }
 }

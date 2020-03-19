@@ -52,7 +52,7 @@ class PaddingPage extends StatelessWidget {
               [
                 "Padding inside a box(container)".text.xl.bold.blue800.make(),
                 CodeBox(
-                    "box.pad.p({number})\n\neg: box.pad.p12.make()\n\nIt will give 12px padding inside the container.\n\nSimilarly you can use all other padding methods with this."
+                    "box.p{number}\n\neg: box.p12.make()\n\nIt will give 12px padding inside the container.\n\nSimilarly you can use all other padding methods with this."
                         .text
                         .wide
                         .white
@@ -133,7 +133,7 @@ class PaddingPage extends StatelessWidget {
             ],
           )
         ],
-      ).p16().scrollVertical(),
+      ).p16().scrollVertical(physics: BouncingScrollPhysics()),
     );
   }
 }
