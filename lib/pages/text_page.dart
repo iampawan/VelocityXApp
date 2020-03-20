@@ -75,7 +75,7 @@ class TextPage extends StatelessWidget {
           20.heightBox,
           "Font Style".text.xl2.make(),
           10.heightBox,
-          "VelocityX offers predefined italic style as a text propertie".text.make(),
+          "VelocityX offers predefined italic style as a text property".text.make(),
           10.heightBox,
           CodeBox(CodeBoxText("'Velocityx'.text.italic.make();")),
           20.heightBox,
