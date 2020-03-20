@@ -57,6 +57,8 @@ class HomePage extends StatelessWidget {
           "Now in your Dart code, you can import the components that are necessary for your application".text.make(),
           10.heightBox,
           CodeBox(CodeBoxText("import 'package:velocity_x/velocity_x.dart' ;")),
+          40.heightBox,
+          "Made with Flutter using VelocityX 💙".text.xl.black.center.make().p16()
         ],
         crossAlignment: CrossAxisAlignment.center,
       ).w64(context).centered().scrollVertical(physics: BouncingScrollPhysics()),

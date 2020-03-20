@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:velocityx_app/pages/home_page.dart';
 import 'package:velocityx_app/velocity_app.dart';
@@ -30,7 +31,7 @@ class SplashPage extends StatelessWidget {
               color: VelocityX.tealColor700,
               // borderSide: BorderSide(color: Colors.white),
               child: VelocityApp.getStartedText.text.light.white.make(),
-            )
+            ),
           ].vStack(crossAlignment: CrossAxisAlignment.center, alignment: MainAxisAlignment.center).p16().box.radialGradient([
             VelocityX.redColor400,
             VelocityX.redColor400,
@@ -48,7 +49,9 @@ class SplashPage extends StatelessWidget {
                 LineAwesomeIcons.github,
                 size: 50,
                 color: Colors.white,
-              )).width(120).height(120).alignTopRight.p8.black.make(),
+              )).width(120).height(120).alignTopRight.p8.black.make().click(() {
+                launch("https://github.com/iampawan/VelocityX");
+              }).make(),
             ),
           ),
           Positioned(
@@ -62,13 +65,19 @@ class SplashPage extends StatelessWidget {
                 LineAwesomeIcons.code,
                 size: 50,
                 color: Colors.white,
-              )).width(120).height(120).alignBottomRight.p8.black.make(),
+              )).width(120).height(120).alignBottomRight.p8.black.make().click(() {
+                launch("https://github.com/iampawan/VelocityXApp");
+              }).make(),
             ),
           ),
           Banner(
             message: "Open Source",
             color: VelocityX.tealColor700,
             location: BannerLocation.topStart,
+          ),
+          Positioned(
+            child: "Made with Flutter using VelocityX 💙".text.xl.black.center.make().p16(),
+            bottom: 0.0,
           )
         ],
         fit: StackFit.expand,

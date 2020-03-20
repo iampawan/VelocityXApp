@@ -1,5 +1,5 @@
 mixin VelocityApp {
-  static const String utilityText = "A minimlist Flutter framework for";
+  static const String utilityText = "A minimalist Flutter framework for";
   static const String rapidText = "rapidly building custom designs.";
   static const String giantFrameworkText =
       '''A framework that gives you all of the building blocks you need to build bespoke designs without any annoying nested styles you have to fight to wrap.''';
