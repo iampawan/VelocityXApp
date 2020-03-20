@@ -31,11 +31,12 @@ class SplashPage extends StatelessWidget {
               // borderSide: BorderSide(color: Colors.white),
               child: VelocityApp.getStartedText.text.light.white.make(),
             )
-          ]
-              .vStack(crossAlignment: CrossAxisAlignment.center, alignment: MainAxisAlignment.center)
-              .p16()
-              .box
-              .linearGradient([VelocityX.orangeColor400, VelocityX.redColor400]).make(),
+          ].vStack(crossAlignment: CrossAxisAlignment.center, alignment: MainAxisAlignment.center).p16().box.radialGradient([
+            VelocityX.redColor400,
+            VelocityX.redColor400,
+            VelocityX.redColor500,
+            VelocityX.redColor500,
+          ]).make(),
           Positioned(
             top: 0.0,
             right: 0.0,
@@ -48,6 +49,20 @@ class SplashPage extends StatelessWidget {
                 size: 50,
                 color: Colors.white,
               )).width(120).height(120).alignTopRight.p8.black.make(),
+            ),
+          ),
+          Positioned(
+            bottom: 0.0,
+            right: 0.0,
+            child: ClipPath(
+              clipper: MyCustomClipper2(),
+              clipBehavior: Clip.antiAlias,
+              child: VelocityBox(
+                  child: Icon(
+                LineAwesomeIcons.code,
+                size: 50,
+                color: Colors.white,
+              )).width(120).height(120).alignBottomRight.p8.black.make(),
             ),
           ),
           Banner(
@@ -69,6 +84,21 @@ class MyCustomClipper extends CustomClipper<Path> {
     p.lineTo(size.width, 0.0);
     p.lineTo(size.width, size.height);
     p.lineTo(0, 0);
+    return p;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) => true;
+}
+
+class MyCustomClipper2 extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    Path p = Path();
+    p.moveTo(size.width, 0.0);
+    p.lineTo(0.0, size.height);
+    p.lineTo(size.width, size.height);
+
     return p;
   }
 

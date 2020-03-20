@@ -25,27 +25,27 @@ class ColorsPage extends StatelessWidget {
           children: <Widget>[
             [
               "To get a color".text.xl.bold.blue800.make(),
-              CodeBox("VelocityX.{colorname}Color{number}\n\neg: VelocityX.blueColor900".selectableText.wide.white.make()),
+              CodeBox(CodeBoxText("VelocityX.{colorname}Color{number}\n\neg: VelocityX.blueColor900")),
             ].vStack().w(width),
             [
               "To get a hexColor".text.xl.bold.blue800.make(),
-              CodeBox("VelocityX.{colorname}{number}\n\neg: VelocityX.blue900".selectableText.wide.white.make()),
+              CodeBox(CodeBoxText("VelocityX.{colorname}{number}\n\neg: VelocityX.blue900")),
             ].vStack().w(width),
             [
               "To use a text color".text.xl.bold.blue800.make(),
-              CodeBox(".{colorname}{number}\n\neg: text.blue900".selectableText.wide.white.make()),
+              CodeBox(CodeBoxText(".{colorname}{number}\n\neg: text.blue900")),
             ].vStack().w(width),
             [
               "To set a text color".text.xl.bold.blue800.make(),
-              CodeBox(".color({yourcolor})\n\neg: text.color(Colors.blue)".selectableText.wide.white.make()),
+              CodeBox(CodeBoxText(".color({yourcolor})\n\neg: text.color(Colors.blue)")),
             ].vStack().w(width),
             [
               "To use a box(container) color".text.xl.bold.blue800.make(),
-              CodeBox(".{colorname}{number}\n\neg: box.blue900".selectableText.wide.white.make()),
+              CodeBox(CodeBoxText(".{colorname}{number}\n\neg: box.blue900")),
             ].vStack().w(width),
             [
               "To set a box(container) color".text.xl.bold.blue800.make(),
-              CodeBox(".color({yourcolor})\n\neg: box.color(Colors.blue)".selectableText.wide.white.make()),
+              CodeBox(CodeBoxText(".color({yourcolor})\n\neg: box.color(Colors.blue)")),
             ].vStack().w(width)
           ],
         ),

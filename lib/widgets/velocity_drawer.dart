@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:velocityx_app/pages/box_page.dart';
 import 'package:velocityx_app/pages/colors_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
@@ -50,7 +51,7 @@ class VelocityDrawer extends StatelessWidget {
               color: Colors.white,
             ),
             title: "Box".text.white.xl2.make(),
-            onTap: () {},
+            onTap: () => context.nav.pushReplacementNamed(BoxPage.routeName),
           ),
           ListTile(
             leading: Icon(

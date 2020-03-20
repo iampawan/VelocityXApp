@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:velocityx_app/pages/box_page.dart';
 import 'package:velocityx_app/pages/colors_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         ColorsPage.routeName: (context) => ColorsPage(),
         PaddingPage.routeName: (context) => PaddingPage(),
         TextPage.routeName: (context) => TextPage(),
+        BoxPage.routeName: (context) => BoxPage(),
       },
     );
   }
