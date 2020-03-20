@@ -30,7 +30,7 @@ class VelocityDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(
-              LineAwesomeIcons.space_shuttle,
+              LineAwesomeIcons.text_height,
               color: Colors.white,
             ),
             title: "Padding".text.white.xl2.make(),
@@ -54,10 +54,50 @@ class VelocityDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(
+              LineAwesomeIcons.credit_card,
+              color: Colors.white,
+            ),
+            title: "Card".text.white.xl2.make(),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(
+              LineAwesomeIcons.stack_exchange,
+              color: Colors.white,
+            ),
+            title: "Flex".text.white.xl2.make(),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(
+              LineAwesomeIcons.list,
+              color: Colors.white,
+            ),
+            title: "List".text.white.xl2.make(),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(
               LineAwesomeIcons.align_center,
               color: Colors.white,
             ),
             title: "Object".text.white.xl2.make(),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(
+              LineAwesomeIcons.circle_o_notch,
+              color: Colors.white,
+            ),
+            title: "Opacity".text.white.xl2.make(),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(
+              LineAwesomeIcons.bold,
+              color: Colors.white,
+            ),
+            title: "Size Boxes".text.white.xl2.make(),
             onTap: () {},
           ),
           ListTile(
@@ -93,7 +133,7 @@ class VelocityDrawer extends StatelessWidget {
             onTap: () {},
           ),
         ],
-      ).box.red600.make(),
+      ).box.teal600.make(),
     );
   }
 }

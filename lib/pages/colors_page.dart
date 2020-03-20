@@ -25,27 +25,27 @@ class ColorsPage extends StatelessWidget {
           children: <Widget>[
             [
               "To get a color".text.xl.bold.blue800.make(),
-              CodeBox("VelocityX.{colorname}Color{number}\n\neg: VelocityX.blueColor900".text.wide.white.make()),
+              CodeBox("VelocityX.{colorname}Color{number}\n\neg: VelocityX.blueColor900".selectableText.wide.white.make()),
             ].vStack().w(width),
             [
               "To get a hexColor".text.xl.bold.blue800.make(),
-              CodeBox("VelocityX.{colorname}{number}\n\neg: VelocityX.blue900".text.wide.white.make()),
+              CodeBox("VelocityX.{colorname}{number}\n\neg: VelocityX.blue900".selectableText.wide.white.make()),
             ].vStack().w(width),
             [
               "To use a text color".text.xl.bold.blue800.make(),
-              CodeBox(".{colorname}{number}\n\neg: text.blue900".text.wide.white.make()),
+              CodeBox(".{colorname}{number}\n\neg: text.blue900".selectableText.wide.white.make()),
             ].vStack().w(width),
             [
               "To set a text color".text.xl.bold.blue800.make(),
-              CodeBox(".color({yourcolor})\n\neg: text.color(Colors.blue)".text.wide.white.make()),
+              CodeBox(".color({yourcolor})\n\neg: text.color(Colors.blue)".selectableText.wide.white.make()),
             ].vStack().w(width),
             [
               "To use a box(container) color".text.xl.bold.blue800.make(),
-              CodeBox(".{colorname}{number}\n\neg: box.blue900".text.wide.white.make()),
+              CodeBox(".{colorname}{number}\n\neg: box.blue900".selectableText.wide.white.make()),
             ].vStack().w(width),
             [
               "To set a box(container) color".text.xl.bold.blue800.make(),
-              CodeBox(".color({yourcolor})\n\neg: box.color(Colors.blue)".text.wide.white.make()),
+              CodeBox(".color({yourcolor})\n\neg: box.color(Colors.blue)".selectableText.wide.white.make()),
             ].vStack().w(width)
           ],
         ),
@@ -240,7 +240,7 @@ class ColorBox extends StatelessWidget {
           return [
             VelocityBox().height(50).width(50).rounded.color(m.color).make(),
             10.widthBox,
-            [m.name.text.lg.make(), 5.heightBox, m.hex.text.gray600.make()].vStack()
+            [m.name.text.lg.make(), 5.heightBox, m.hex.selectableText.gray600.make()].vStack()
           ].hStack(crossAlignment: CrossAxisAlignment.start);
         }).toList());
   }

@@ -10,6 +10,6 @@ class CodeBox extends StatelessWidget {
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return data.box.blue900.p16.rounded.make().py8();
+    return data.box.teal800.p20.roundedSM.make().py8();
   }
 }

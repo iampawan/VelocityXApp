@@ -22,12 +22,13 @@ class PaddingPage extends StatelessWidget {
             children: <Widget>[
               [
                 "Custom Padding from all directions".text.xl.bold.blue800.make(),
-                CodeBox("anywidget.p({number})\n\neg: Text().p(10)\n\nIt will give 10px paddings from all directions.".text.wide.white.make()),
+                CodeBox(
+                    "anywidget.p({number})\n\neg: Text().p(10)\n\nIt will give 10px paddings from all directions.".selectableText.wide.white.make()),
               ].vStack().w(width),
               [
                 "Custom Padding from left, top, right & bottom".text.xl.bold.blue800.make(),
                 CodeBox("anywidget.pLTRB({l,t,r,b})\n\neg: Text().pLTRB(1,2,3,4)\n\nIt will give 1px left, 2px top, 3px right, 4px bottom paddings."
-                    .text
+                    .selectableText
                     .wide
                     .white
                     .make()),
@@ -36,7 +37,7 @@ class PaddingPage extends StatelessWidget {
                 "Custom Padding symmetrically".text.xl.bold.blue800.make(),
                 CodeBox(
                     "anywidget.pSymmetric(v:{number},h:{number})\n\neg: Text().pSymmetric(v:8,h:16)\n\nIt will give 8px vertical and 16px horizontal paddings."
-                        .text
+                        .selectableText
                         .wide
                         .white
                         .make()),
@@ -44,7 +45,7 @@ class PaddingPage extends StatelessWidget {
               [
                 "Custom Padding in only specified directions".text.xl.bold.blue800.make(),
                 CodeBox("anywidget.pOnly({sides}:{number})\n\neg: Text().pOnly(left:8,top:16)\n\nIt will give 8px left and 16px top paddings."
-                    .text
+                    .selectableText
                     .wide
                     .white
                     .make()),
@@ -53,7 +54,7 @@ class PaddingPage extends StatelessWidget {
                 "Padding inside a box(container)".text.xl.bold.blue800.make(),
                 CodeBox(
                     "box.p{number}\n\neg: box.p12.make()\n\nIt will give 12px padding inside the container.\n\nSimilarly you can use all other padding methods with this."
-                        .text
+                        .selectableText
                         .wide
                         .white
                         .make()),
@@ -69,7 +70,8 @@ class PaddingPage extends StatelessWidget {
             children: <Widget>[
               [
                 "To pad a widget from all directions\n".text.xl.bold.blue800.make(),
-                CodeBox("anywidget.p{number}()\n\neg: Text().p8()\n\nIt will give 8px paddings from all directions.".text.wide.white.make()),
+                CodeBox(
+                    "anywidget.p{number}()\n\neg: Text().p8()\n\nIt will give 8px paddings from all directions.".selectableText.wide.white.make()),
                 "Other available paddings".text.xl.bold.blue800.make(),
                 VelocityDiscList(
                   [
@@ -90,7 +92,7 @@ class PaddingPage extends StatelessWidget {
               ].vStack(),
               [
                 "To pad a widget horizontally\n(x for x-axis)".text.xl.bold.blue800.make(),
-                CodeBox("anywidget.px{number}\n\neg: Text().px8()\n\nIt will give 8px horizontally.".text.wide.white.make()),
+                CodeBox("anywidget.px{number}\n\neg: Text().px8()\n\nIt will give 8px horizontally.".selectableText.wide.white.make()),
                 "Other available paddings".text.xl.bold.blue800.make(),
                 VelocityDiscList(
                   [
@@ -111,7 +113,7 @@ class PaddingPage extends StatelessWidget {
               ].vStack(),
               [
                 "To pad a widget vertically\n(y for y-axis)".text.xl.bold.blue800.make(),
-                CodeBox("anywidget.py{number}\n\neg: Text().py16()\n\nIt will give 16px vertically.".text.wide.white.make()),
+                CodeBox("anywidget.py{number}\n\neg: Text().py16()\n\nIt will give 16px vertically.".selectableText.wide.white.make()),
                 "Other available paddings".text.xl.bold.blue800.make(),
                 VelocityDiscList(
                   [

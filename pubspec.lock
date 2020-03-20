@@ -23,7 +23,7 @@ packages:
     source: hosted
     version: "2.4.0"
   auto_size_text:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: auto_size_text
       url: "https://pub.dartlang.org"
@@ -273,7 +273,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "0ffa8a8d73a157017f2d54e160bdd69df79a0075"
+      resolved-ref: c06de8f38fd57ba78a560777d0b0d69a4311b0fa
       url: "https://github.com/iampawan/VelocityX.git"
     source: git
     version: "0.0.1"
