@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:velocityx_app/pages/box_page.dart';
+import 'package:velocityx_app/pages/card_page.dart';
 import 'package:velocityx_app/pages/colors_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
+import 'package:velocityx_app/pages/size_box.dart';
 import 'package:velocityx_app/pages/text_page.dart';
 
 class VelocityDrawer extends StatelessWidget {
@@ -59,8 +61,17 @@ class VelocityDrawer extends StatelessWidget {
               color: Colors.white,
             ),
             title: "Card".text.white.xl2.make(),
-            onTap: () {},
+            onTap: () => context.nav.pushReplacementNamed(CardPage.routeName),
           ),
+          ListTile(
+            leading: Icon(
+              LineAwesomeIcons.bold,
+              color: Colors.white,
+            ),
+            title: "Size Box".text.white.xl2.make(),
+            onTap: () => context.nav.pushReplacementNamed(SizeBoxPage.routeName),
+          ),
+          "Documentation Pending".text.white.make().p20(),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.stack_exchange,
@@ -91,14 +102,6 @@ class VelocityDrawer extends StatelessWidget {
               color: Colors.white,
             ),
             title: "Opacity".text.white.xl2.make(),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              LineAwesomeIcons.bold,
-              color: Colors.white,
-            ),
-            title: "Size Boxes".text.white.xl2.make(),
             onTap: () {},
           ),
           ListTile(
