@@ -306,10 +306,10 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: c06de8f38fd57ba78a560777d0b0d69a4311b0fa
+      resolved-ref: "50e35ce1d8799da6a7b163b38fbc158e87418388"
       url: "https://github.com/iampawan/VelocityX.git"
     source: git
-    version: "0.0.1"
+    version: "0.1.0"
   xml:
     dependency: transitive
     description:

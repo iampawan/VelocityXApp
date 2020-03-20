@@ -41,6 +41,15 @@ class HomePage extends StatelessWidget {
           10.heightBox,
           Image.asset("assets/setup.png"),
           20.heightBox,
+          "Note:".text.bold.make(),
+          "For better readability of the code use 'dart.lineLength': 200 in your fav IDE for dart formatting."
+              .text
+              .medium
+              .center
+              .blue800
+              .semiBold
+              .make(),
+          20.heightBox,
           "Installation Guide".text.xl2.semiBold.bold.make(),
           10.heightBox,
           "Add the following dependency into your pubspec.yaml file".text.sm.semiBold.bold.make(),
