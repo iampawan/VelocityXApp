@@ -9,6 +9,7 @@
 .history
 .svn/
 
+.firebase
 firebase.json
 .firebaserc
 

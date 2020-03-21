@@ -1,16 +1,62 @@
-# velocityx_app
+<p align="center">
+  <a href="https://velocityx.dev/" target="_blank">
+    <h1>VelocityX Documentation App</h1>
+  </a>
+</p>
 
-A new Flutter project.
+[**VelocityX**](https://velocityx.dev/) is a 100% free Flutter open-source minimalist UI Framework built with <a href="https://flutter.dev/" target="_blank">Flutter SDK</a> to make Flutter development easier and more joyful than ever.
 
-## Getting Started
+## Inspired from Tailwindcss and SwiftUI.
 
-This project is a starting point for a Flutter application.
+```dart
+"Web".text.white.xl4.bold.center.makeCentered().box.roundedLg.red500.shadow2xl.make().whHalf(context).centered());
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Quick start
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Read the [Getting started page](https://velocityx.dev/#/home)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshot
+
+ <p align="center">
+  <a target="_blank" href="https://velocityx.dev/">
+    <img src="https://i.imgur.com/dMLivNy.png" alt="VelocityX">
+  </a>
+</p>
+
+<p align="center">
+  <a target="_blank" href="https://velocityx.dev/">
+    <img src="https://i.imgur.com/5Kh8iIb.png" alt="VelocityX">
+  </a>
+</p>
+
+## Contributing
+
+VelocityX & VelocityX Documentation App are **100% free** and **open source**. We encourage and support an active, healthy community that accepts contributions from the public &ndash; including you. There are a couple of ways in which you can contribute to the growing community of `VelocityX`.
+
+- Pick up any issue marked with ["good first issue"](https://github.com/iampawan/velocityxapp/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+- Fix a bug
+- Write and improve some **documentation**. Documentation is very critical to us. We would appreciate help in adding multiple languages to our docs.
+- If you are a developer, feel free to check out the source and submit pull requests.
+- Dig into [**CONTRIBUTING.MD**](CONTRIBUTING.md), which covers submitting bugs, requesting new features, preparing your code for a pull request, etc.
+- Please don't forget to **like**, **follow**, and **star our repo**!
+
+## Documentation
+
+[**Installation Guide**](https://velocityx.dev/#/home)
+
+### Social Media
+
+Twitter: <https://twitter.com/imthepk>
+
+Facebook: <https://www.facebook.com/imthepk>
+
+Linkedin: <https://www.linkedin.com/in/imthepk>
+
+Instagram: <https://www.instagram.com/codepur_ka_superhero/>
+
+### Note: VelocityX is not directly and/or indirectly associated/affiliated with Flutter or Google LLC.
+
+## Copyright-and-license
+
+Code and documentation Copyright 2020 [Pawan Kumar](https://pawan.live). Code released under the [Apache License]. Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
