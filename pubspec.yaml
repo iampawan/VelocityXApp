@@ -11,7 +11,7 @@ description: VelocityX app for documentation.
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 0.1.2+3
+version: 0.2.0+4
 
 environment:
   sdk: ">=2.6.0 <3.0.0"
@@ -19,9 +19,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  provider: ^4.0.4
   google_fonts: ^0.3.9
-  auto_size_text: ^2.1.0
+  # auto_size_text: ^2.1.0
   url_launcher: ^5.4.2
   url_launcher_macos: ^0.0.1+4
 
@@ -30,8 +29,7 @@ dependencies:
   cupertino_icons: ^0.1.3
   line_awesome_icons: ^1.0.4+2
 
-  velocity_x:
-    git: https://github.com/iampawan/VelocityX.git
+  velocity_x: ^0.2.0
 
 dev_dependencies:
   flutter_test:

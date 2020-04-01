@@ -7,7 +7,9 @@ class ColorsPage extends StatelessWidget {
   static const String routeName = "/colors";
   @override
   Widget build(BuildContext context) {
-    final width = context.mdWindowSize == MobileWindowSize.xsmall ? context.percentWidth * 100 : 300.0;
+    final width = context.mdWindowSize == MobileWindowSize.xsmall
+        ? context.percentWidth * 100
+        : 300.0;
     return VelocityScaffold(
       title: "Colors",
       body: VStack([
@@ -17,7 +19,9 @@ class ColorsPage extends StatelessWidget {
             .semiBold
             .make(),
         10.heightBox,
-        "You can either use the color directly or get the hex value".text.make(),
+        "You can either use the color directly or get the hex value"
+            .text
+            .make(),
         10.heightBox,
         Wrap(
           runSpacing: 20,
@@ -25,11 +29,13 @@ class ColorsPage extends StatelessWidget {
           children: <Widget>[
             [
               "To get a color".text.xl.bold.blue800.make(),
-              CodeBox(CodeBoxText("VelocityX.{colorname}Color{number}\n\neg: VelocityX.blueColor900")),
+              CodeBox(CodeBoxText(
+                  "VelocityX.{colorname}Color{number}\n\neg: VelocityX.blueColor900")),
             ].vStack().w(width),
             [
               "To get a hexColor".text.xl.bold.blue800.make(),
-              CodeBox(CodeBoxText("VelocityX.{colorname}{number}\n\neg: VelocityX.blue900")),
+              CodeBox(CodeBoxText(
+                  "VelocityX.{colorname}{number}\n\neg: VelocityX.blue900")),
             ].vStack().w(width),
             [
               "To use a text color".text.xl.bold.blue800.make(),
@@ -37,7 +43,8 @@ class ColorsPage extends StatelessWidget {
             ].vStack().w(width),
             [
               "To set a text color".text.xl.bold.blue800.make(),
-              CodeBox(CodeBoxText(".color({yourcolor})\n\neg: text.color(Colors.blue)")),
+              CodeBox(CodeBoxText(
+                  ".color({yourcolor})\n\neg: text.color(Colors.blue)")),
             ].vStack().w(width),
             [
               "To use a box(container) color".text.xl.bold.blue800.make(),
@@ -45,7 +52,8 @@ class ColorsPage extends StatelessWidget {
             ].vStack().w(width),
             [
               "To set a box(container) color".text.xl.bold.blue800.make(),
-              CodeBox(CodeBoxText(".color({yourcolor})\n\neg: box.color(Colors.blue)")),
+              CodeBox(CodeBoxText(
+                  ".color({yourcolor})\n\neg: box.color(Colors.blue)")),
             ].vStack().w(width)
           ],
         ),
@@ -65,15 +73,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.grayColor100, "Gray100", VelocityX.gray100),
-            MyColor(VelocityX.grayColor200, "Gray200", VelocityX.gray200),
-            MyColor(VelocityX.grayColor300, "Gray300", VelocityX.gray300),
-            MyColor(VelocityX.grayColor400, "Gray400", VelocityX.gray400),
-            MyColor(VelocityX.grayColor500, "Gray500", VelocityX.gray500),
-            MyColor(VelocityX.grayColor600, "Gray600", VelocityX.gray600),
-            MyColor(VelocityX.grayColor700, "Gray700", VelocityX.gray700),
-            MyColor(VelocityX.grayColor800, "Gray800", VelocityX.gray800),
-            MyColor(VelocityX.grayColor900, "Gray900", VelocityX.gray900),
+            MyColor(VelocityX.gray100, "Gray100", VelocityX.grayHex100),
+            MyColor(VelocityX.gray200, "Gray200", VelocityX.grayHex200),
+            MyColor(VelocityX.gray300, "Gray300", VelocityX.grayHex300),
+            MyColor(VelocityX.gray400, "Gray400", VelocityX.grayHex400),
+            MyColor(VelocityX.gray500, "Gray500", VelocityX.grayHex500),
+            MyColor(VelocityX.gray600, "Gray600", VelocityX.grayHex600),
+            MyColor(VelocityX.gray700, "Gray700", VelocityX.grayHex700),
+            MyColor(VelocityX.gray800, "Gray800", VelocityX.grayHex800),
+            MyColor(VelocityX.gray900, "Gray900", VelocityX.grayHex900),
           ],
         ),
         20.heightBox,
@@ -81,15 +89,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.redColor100, "Red100", VelocityX.red100),
-            MyColor(VelocityX.redColor200, "Red200", VelocityX.red200),
-            MyColor(VelocityX.redColor300, "Red300", VelocityX.red300),
-            MyColor(VelocityX.redColor400, "Red400", VelocityX.red400),
-            MyColor(VelocityX.redColor500, "Red500", VelocityX.red500),
-            MyColor(VelocityX.redColor600, "Red600", VelocityX.red600),
-            MyColor(VelocityX.redColor700, "Red700", VelocityX.red700),
-            MyColor(VelocityX.redColor800, "Red800", VelocityX.red800),
-            MyColor(VelocityX.redColor900, "Red900", VelocityX.red900),
+            MyColor(VelocityX.red100, "Red100", VelocityX.redHex100),
+            MyColor(VelocityX.red200, "Red200", VelocityX.redHex200),
+            MyColor(VelocityX.red300, "Red300", VelocityX.redHex300),
+            MyColor(VelocityX.red400, "Red400", VelocityX.redHex400),
+            MyColor(VelocityX.red500, "Red500", VelocityX.redHex500),
+            MyColor(VelocityX.red600, "Red600", VelocityX.redHex600),
+            MyColor(VelocityX.red700, "Red700", VelocityX.redHex700),
+            MyColor(VelocityX.red800, "Red800", VelocityX.redHex800),
+            MyColor(VelocityX.red900, "Red900", VelocityX.redHex900),
           ],
         ),
         20.heightBox,
@@ -97,15 +105,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.orangeColor100, "Orange100", VelocityX.orange100),
-            MyColor(VelocityX.orangeColor200, "Orange200", VelocityX.orange200),
-            MyColor(VelocityX.orangeColor300, "Orange300", VelocityX.orange300),
-            MyColor(VelocityX.orangeColor400, "Orange400", VelocityX.orange400),
-            MyColor(VelocityX.orangeColor500, "Orange500", VelocityX.orange500),
-            MyColor(VelocityX.orangeColor600, "Orange600", VelocityX.orange600),
-            MyColor(VelocityX.orangeColor700, "Orange700", VelocityX.orange700),
-            MyColor(VelocityX.orangeColor800, "Orange800", VelocityX.orange800),
-            MyColor(VelocityX.orangeColor900, "Orange900", VelocityX.orange900),
+            MyColor(VelocityX.orange100, "Orange100", VelocityX.orangeHex100),
+            MyColor(VelocityX.orange200, "Orange200", VelocityX.orangeHex200),
+            MyColor(VelocityX.orange300, "Orange300", VelocityX.orangeHex300),
+            MyColor(VelocityX.orange400, "Orange400", VelocityX.orangeHex400),
+            MyColor(VelocityX.orange500, "Orange500", VelocityX.orangeHex500),
+            MyColor(VelocityX.orange600, "Orange600", VelocityX.orangeHex600),
+            MyColor(VelocityX.orange700, "Orange700", VelocityX.orangeHex700),
+            MyColor(VelocityX.orange800, "Orange800", VelocityX.orangeHex800),
+            MyColor(VelocityX.orange900, "Orange900", VelocityX.orangeHex900),
           ],
         ),
         20.heightBox,
@@ -113,15 +121,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.yellowColor100, "Yellow100", VelocityX.yellow100),
-            MyColor(VelocityX.yellowColor200, "Yellow200", VelocityX.yellow200),
-            MyColor(VelocityX.yellowColor300, "Yellow300", VelocityX.yellow300),
-            MyColor(VelocityX.yellowColor400, "Yellow400", VelocityX.yellow400),
-            MyColor(VelocityX.yellowColor500, "Yellow500", VelocityX.yellow500),
-            MyColor(VelocityX.yellowColor600, "Yellow600", VelocityX.yellow600),
-            MyColor(VelocityX.yellowColor700, "Yellow700", VelocityX.yellow700),
-            MyColor(VelocityX.yellowColor800, "Yellow800", VelocityX.yellow800),
-            MyColor(VelocityX.yellowColor900, "Yellow900", VelocityX.yellow900),
+            MyColor(VelocityX.yellow100, "Yellow100", VelocityX.yellowHex100),
+            MyColor(VelocityX.yellow200, "Yellow200", VelocityX.yellowHex200),
+            MyColor(VelocityX.yellow300, "Yellow300", VelocityX.yellowHex300),
+            MyColor(VelocityX.yellow400, "Yellow400", VelocityX.yellowHex400),
+            MyColor(VelocityX.yellow500, "Yellow500", VelocityX.yellowHex500),
+            MyColor(VelocityX.yellow600, "Yellow600", VelocityX.yellowHex600),
+            MyColor(VelocityX.yellow700, "Yellow700", VelocityX.yellowHex700),
+            MyColor(VelocityX.yellow800, "Yellow800", VelocityX.yellowHex800),
+            MyColor(VelocityX.yellow900, "Yellow900", VelocityX.yellowHex900),
           ],
         ),
         20.heightBox,
@@ -129,15 +137,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.greenColor100, "Green100", VelocityX.green100),
-            MyColor(VelocityX.greenColor200, "Green200", VelocityX.green200),
-            MyColor(VelocityX.greenColor300, "Green300", VelocityX.green300),
-            MyColor(VelocityX.greenColor400, "Green400", VelocityX.green400),
-            MyColor(VelocityX.greenColor500, "Green500", VelocityX.green500),
-            MyColor(VelocityX.greenColor600, "Green600", VelocityX.green600),
-            MyColor(VelocityX.greenColor700, "Green700", VelocityX.green700),
-            MyColor(VelocityX.greenColor800, "Green800", VelocityX.green800),
-            MyColor(VelocityX.greenColor900, "Green900", VelocityX.green900),
+            MyColor(VelocityX.green100, "Green100", VelocityX.greenHex100),
+            MyColor(VelocityX.green200, "Green200", VelocityX.greenHex200),
+            MyColor(VelocityX.green300, "Green300", VelocityX.greenHex300),
+            MyColor(VelocityX.green400, "Green400", VelocityX.greenHex400),
+            MyColor(VelocityX.green500, "Green500", VelocityX.greenHex500),
+            MyColor(VelocityX.green600, "Green600", VelocityX.greenHex600),
+            MyColor(VelocityX.green700, "Green700", VelocityX.greenHex700),
+            MyColor(VelocityX.green800, "Green800", VelocityX.greenHex800),
+            MyColor(VelocityX.green900, "Green900", VelocityX.greenHex900),
           ],
         ),
         20.heightBox,
@@ -145,15 +153,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.tealColor100, "Teal100", VelocityX.teal100),
-            MyColor(VelocityX.tealColor200, "Teal200", VelocityX.teal200),
-            MyColor(VelocityX.tealColor300, "Teal300", VelocityX.teal300),
-            MyColor(VelocityX.tealColor400, "Teal400", VelocityX.teal400),
-            MyColor(VelocityX.tealColor500, "Teal500", VelocityX.teal500),
-            MyColor(VelocityX.tealColor600, "Teal600", VelocityX.teal600),
-            MyColor(VelocityX.tealColor700, "Teal700", VelocityX.teal700),
-            MyColor(VelocityX.tealColor800, "Teal800", VelocityX.teal800),
-            MyColor(VelocityX.tealColor900, "Teal900", VelocityX.teal900),
+            MyColor(VelocityX.teal100, "Teal100", VelocityX.tealHex100),
+            MyColor(VelocityX.teal200, "Teal200", VelocityX.tealHex200),
+            MyColor(VelocityX.teal300, "Teal300", VelocityX.tealHex300),
+            MyColor(VelocityX.teal400, "Teal400", VelocityX.tealHex400),
+            MyColor(VelocityX.teal500, "Teal500", VelocityX.tealHex500),
+            MyColor(VelocityX.teal600, "Teal600", VelocityX.tealHex600),
+            MyColor(VelocityX.teal700, "Teal700", VelocityX.tealHex700),
+            MyColor(VelocityX.teal800, "Teal800", VelocityX.tealHex800),
+            MyColor(VelocityX.teal900, "Teal900", VelocityX.tealHex900),
           ],
         ),
         20.heightBox,
@@ -161,15 +169,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.blueColor100, "Blue100", VelocityX.blue100),
-            MyColor(VelocityX.blueColor200, "Blue200", VelocityX.blue200),
-            MyColor(VelocityX.blueColor300, "Blue300", VelocityX.blue300),
-            MyColor(VelocityX.blueColor400, "Blue400", VelocityX.blue400),
-            MyColor(VelocityX.blueColor500, "Blue500", VelocityX.blue500),
-            MyColor(VelocityX.blueColor600, "Blue600", VelocityX.blue600),
-            MyColor(VelocityX.blueColor700, "Blue700", VelocityX.blue700),
-            MyColor(VelocityX.blueColor800, "Blue800", VelocityX.blue800),
-            MyColor(VelocityX.blueColor900, "Blue900", VelocityX.blue900),
+            MyColor(VelocityX.blue100, "Blue100", VelocityX.blueHex100),
+            MyColor(VelocityX.blue200, "Blue200", VelocityX.blueHex200),
+            MyColor(VelocityX.blue300, "Blue300", VelocityX.blueHex300),
+            MyColor(VelocityX.blue400, "Blue400", VelocityX.blueHex400),
+            MyColor(VelocityX.blue500, "Blue500", VelocityX.blueHex500),
+            MyColor(VelocityX.blue600, "Blue600", VelocityX.blueHex600),
+            MyColor(VelocityX.blue700, "Blue700", VelocityX.blueHex700),
+            MyColor(VelocityX.blue800, "Blue800", VelocityX.blueHex800),
+            MyColor(VelocityX.blue900, "Blue900", VelocityX.blueHex900),
           ],
         ),
         20.heightBox,
@@ -177,15 +185,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.indigoColor100, "Indigo100", VelocityX.indigo100),
-            MyColor(VelocityX.indigoColor200, "Indigo200", VelocityX.indigo200),
-            MyColor(VelocityX.indigoColor300, "Indigo300", VelocityX.indigo300),
-            MyColor(VelocityX.indigoColor400, "Indigo400", VelocityX.indigo400),
-            MyColor(VelocityX.indigoColor500, "Indigo500", VelocityX.indigo500),
-            MyColor(VelocityX.indigoColor600, "Indigo600", VelocityX.indigo600),
-            MyColor(VelocityX.indigoColor700, "Indigo700", VelocityX.indigo700),
-            MyColor(VelocityX.indigoColor800, "Indigo800", VelocityX.indigo800),
-            MyColor(VelocityX.indigoColor900, "Indigo900", VelocityX.indigo900),
+            MyColor(VelocityX.indigo100, "Indigo100", VelocityX.indigoHex100),
+            MyColor(VelocityX.indigo200, "Indigo200", VelocityX.indigoHex200),
+            MyColor(VelocityX.indigo300, "Indigo300", VelocityX.indigoHex300),
+            MyColor(VelocityX.indigo400, "Indigo400", VelocityX.indigoHex400),
+            MyColor(VelocityX.indigo500, "Indigo500", VelocityX.indigoHex500),
+            MyColor(VelocityX.indigo600, "Indigo600", VelocityX.indigoHex600),
+            MyColor(VelocityX.indigo700, "Indigo700", VelocityX.indigoHex700),
+            MyColor(VelocityX.indigo800, "Indigo800", VelocityX.indigoHex800),
+            MyColor(VelocityX.indigo900, "Indigo900", VelocityX.indigoHex900),
           ],
         ),
         20.heightBox,
@@ -193,15 +201,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.purpleColor100, "Purple100", VelocityX.purple100),
-            MyColor(VelocityX.purpleColor200, "Purple200", VelocityX.purple200),
-            MyColor(VelocityX.purpleColor300, "Purple300", VelocityX.purple300),
-            MyColor(VelocityX.purpleColor400, "Purple400", VelocityX.purple400),
-            MyColor(VelocityX.purpleColor500, "Purple500", VelocityX.purple500),
-            MyColor(VelocityX.purpleColor600, "Purple600", VelocityX.purple600),
-            MyColor(VelocityX.purpleColor700, "Purple700", VelocityX.purple700),
-            MyColor(VelocityX.purpleColor800, "Purple800", VelocityX.purple800),
-            MyColor(VelocityX.purpleColor900, "Purple900", VelocityX.purple900),
+            MyColor(VelocityX.purple100, "Purple100", VelocityX.purpleHex100),
+            MyColor(VelocityX.purple200, "Purple200", VelocityX.purpleHex200),
+            MyColor(VelocityX.purple300, "Purple300", VelocityX.purpleHex300),
+            MyColor(VelocityX.purple400, "Purple400", VelocityX.purpleHex400),
+            MyColor(VelocityX.purple500, "Purple500", VelocityX.purpleHex500),
+            MyColor(VelocityX.purple600, "Purple600", VelocityX.purpleHex600),
+            MyColor(VelocityX.purple700, "Purple700", VelocityX.purpleHex700),
+            MyColor(VelocityX.purple800, "Purple800", VelocityX.purpleHex800),
+            MyColor(VelocityX.purple900, "Purple900", VelocityX.purpleHex900),
           ],
         ),
         20.heightBox,
@@ -209,15 +217,15 @@ class ColorsPage extends StatelessWidget {
         10.heightBox,
         ColorBox(
           children: [
-            MyColor(VelocityX.pinkColor100, "Pink100", VelocityX.pink100),
-            MyColor(VelocityX.pinkColor200, "Pink200", VelocityX.pink200),
-            MyColor(VelocityX.pinkColor300, "Pink300", VelocityX.pink300),
-            MyColor(VelocityX.pinkColor400, "Pink400", VelocityX.pink400),
-            MyColor(VelocityX.pinkColor500, "Pink500", VelocityX.pink500),
-            MyColor(VelocityX.pinkColor600, "Pink600", VelocityX.pink600),
-            MyColor(VelocityX.pinkColor700, "Pink700", VelocityX.pink700),
-            MyColor(VelocityX.pinkColor800, "Pink800", VelocityX.pink800),
-            MyColor(VelocityX.pinkColor900, "Pink900", VelocityX.pink900),
+            MyColor(VelocityX.pink100, "Pink100", VelocityX.pinkHex100),
+            MyColor(VelocityX.pink200, "Pink200", VelocityX.pinkHex200),
+            MyColor(VelocityX.pink300, "Pink300", VelocityX.pinkHex300),
+            MyColor(VelocityX.pink400, "Pink400", VelocityX.pinkHex400),
+            MyColor(VelocityX.pink500, "Pink500", VelocityX.pinkHex500),
+            MyColor(VelocityX.pink600, "Pink600", VelocityX.pinkHex600),
+            MyColor(VelocityX.pink700, "Pink700", VelocityX.pinkHex700),
+            MyColor(VelocityX.pink800, "Pink800", VelocityX.pinkHex800),
+            MyColor(VelocityX.pink900, "Pink900", VelocityX.pinkHex900),
           ],
         ),
       ]).p16().scrollVertical(physics: BouncingScrollPhysics()),
@@ -240,7 +248,11 @@ class ColorBox extends StatelessWidget {
           return [
             VelocityBox().height(50).width(50).rounded.color(m.color).make(),
             10.widthBox,
-            [m.name.text.lg.make(), 5.heightBox, m.hex.selectableText.gray600.make()].vStack()
+            [
+              m.name.text.lg.make(),
+              5.heightBox,
+              m.hex.selectableText.gray600.make()
+            ].vStack()
           ].hStack(crossAlignment: CrossAxisAlignment.start);
         }).toList());
   }

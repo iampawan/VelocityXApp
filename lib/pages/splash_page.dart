@@ -10,16 +10,37 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.black,
+      color: VelocityX.gray800,
       child: ZStack(
         [
           [
-            [
-              "Velocity".text.white.xl.bold.size(50).make().box.make(),
-              "X".text.yellow400.xl.bold.size(60).make().box.make(),
-            ].hStack(crossAlignment: CrossAxisAlignment.center),
-            VelocityApp.utilityText.text.xl3.light.black.center.make(),
-            VelocityApp.rapidText.text.xl3.light.black.center.make(),
+            VelocityDevice(
+                mobile: [
+                  "Velocity".richText.white.xl.extraBold.size(30).maxLines(1).withTextSpanChildren(
+                    [
+                      "X".textSpan.blue500.extraBold.size(40).make(),
+                    ],
+                  ).make(),
+                  VelocityApp.utilityText.text.xl2.light.white.center.make(),
+                  VelocityApp.rapidText.text.xl2.light.teal400.center.make(),
+                  5.heightBox,
+                  "v${VelocityApp.versionText}".text.white.wide.semiBold.make()
+                ].vStack(
+                  crossAlignment: CrossAxisAlignment.center,
+                ),
+                web: [
+                  "Velocity".richText.white.xl.extraBold.size(50).maxLines(1).withTextSpanChildren(
+                    [
+                      "X".textSpan.blue500.extraBold.size(60).make(),
+                    ],
+                  ).make(),
+                  VelocityApp.utilityText.text.xl3.light.white.center.make(),
+                  VelocityApp.rapidText.text.xl3.light.teal400.center.make(),
+                  5.heightBox,
+                  "v${VelocityApp.versionText}".text.white.wide.semiBold.make()
+                ].vStack(
+                  crossAlignment: CrossAxisAlignment.center,
+                )),
             20.heightBox,
             RaisedButton(
               onPressed: () => context.nav.pushReplacementNamed(HomePage.routeName),
@@ -28,59 +49,54 @@ class SplashPage extends StatelessWidget {
                 horizontal: VelocityX.dp64,
               ),
               shape: VelocityX.roundedSm,
-              color: VelocityX.tealColor700,
+              color: VelocityX.blue500,
               // borderSide: BorderSide(color: Colors.white),
-              child: VelocityApp.getStartedText.text.light.white.make(),
+              child: VelocityApp.getStartedText.text.center.white.make(),
             ),
-          ].vStack(crossAlignment: CrossAxisAlignment.center, alignment: MainAxisAlignment.center).p16().box.radialGradient([
-            VelocityX.redColor400,
-            VelocityX.redColor400,
-            VelocityX.redColor500,
-            VelocityX.redColor500,
-          ]).make(),
+          ]
+              .vStack(crossAlignment: CrossAxisAlignment.center, alignment: MainAxisAlignment.center)
+              .scrollVertical()
+              .centered()
+              .p16()
+              .box
+              .width(context.screenWidth / 1.5)
+              .height(context.percentHeight * 40)
+              .roundedLg
+              .neumorphic(color: VelocityX.gray800)
+              .makeCentered(),
           Positioned(
             top: 0.0,
             right: 0.0,
-            child: ClipPath(
-              clipper: MyCustomClipper(),
-              clipBehavior: Clip.antiAlias,
-              child: VelocityBox(
-                  child: Icon(
-                LineAwesomeIcons.github,
-                size: 50,
-                color: Colors.white,
-              )).width(120).height(120).alignTopRight.p8.black.make().click(() {
-                launch("https://github.com/iampawan/VelocityX");
-              }).make(),
-            ),
+            child: Icon(
+              LineAwesomeIcons.github,
+              size: 50,
+              color: Colors.white,
+            ).animatedBox.width(120).height(120).alignCenter.roundedFull.gray800.neumorphic().make().click(() {
+              launch("https://github.com/iampawan/VelocityX");
+            }).make(),
           ),
           Positioned(
             bottom: 0.0,
             right: 0.0,
-            child: ClipPath(
-              clipper: MyCustomClipper2(),
-              clipBehavior: Clip.antiAlias,
-              child: VelocityBox(
-                  child: Icon(
-                LineAwesomeIcons.code,
-                size: 50,
-                color: Colors.white,
-              )).width(120).height(120).alignBottomRight.p8.black.make().click(() {
-                launch("https://github.com/iampawan/VelocityXApp");
-              }).make(),
-            ),
+            child: Icon(
+              LineAwesomeIcons.code,
+              size: 50,
+              color: Colors.white,
+            ).animatedBox.width(120).height(120).alignCenter.roundedFull.gray800.neumorphic().make().click(() {
+              launch("https://github.com/iampawan/VelocityXApp");
+            }).make(),
           ),
           Banner(
             message: "Open Source",
-            color: VelocityX.tealColor700,
+            color: VelocityX.gray800,
             location: BannerLocation.topStart,
           ),
           Positioned(
-            child: "Made with Flutter using VelocityX 💙".text.xl.black.center.make().p16(),
+            child: "Made with Flutter using VelocityX".text.xl.white.center.make().box.p16.rounded.gray800.neumorphic(curve: VelocityCurve.convex).make(),
             bottom: 0.0,
           )
         ],
-        fit: StackFit.expand,
+        fit: StackFit.loose,
       ).p16(),
     );
   }
