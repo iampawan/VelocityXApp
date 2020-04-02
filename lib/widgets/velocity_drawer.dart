@@ -72,7 +72,7 @@ class VelocityDrawer extends StatelessWidget {
             title: "Size Box".text.white.xl2.make(),
             onTap: () => context.nav.pushReplacementNamed(SizeBoxPage.routeName),
           ),
-          "Documentation Pending".text.white.make().p20(),
+         
           ListTile(
             leading: Icon(
               LineAwesomeIcons.stack_exchange,
@@ -81,6 +81,7 @@ class VelocityDrawer extends StatelessWidget {
             title: "Flex".text.white.xl2.make(),
             onTap: () => context.nav.pushReplacementNamed(FlexPage.routeName),
           ),
+           "Documentation Pending".text.white.make().p20(),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.list,
