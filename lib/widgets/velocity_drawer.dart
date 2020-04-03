@@ -6,6 +6,7 @@ import 'package:velocityx_app/pages/card_page.dart';
 import 'package:velocityx_app/pages/colors_page.dart';
 import 'package:velocityx_app/pages/flex_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
+import 'package:velocityx_app/pages/list_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
 import 'package:velocityx_app/pages/size_box.dart';
 import 'package:velocityx_app/pages/text_page.dart';
@@ -88,7 +89,7 @@ class VelocityDrawer extends StatelessWidget {
               color: Colors.white,
             ),
             title: "List".text.white.xl2.make(),
-            onTap: () {},
+            onTap: () => context.nav.pushReplacementNamed(ListPage.routeName),
           ),
           ListTile(
             leading: Icon(
