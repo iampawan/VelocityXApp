@@ -12,7 +12,7 @@ class ListPage extends StatelessWidget {
         ? context.percentWidth * 100
         : 300.0;
     return VelocityScaffold(
-      title: "Box (Container)",
+      title: "List",
       body: VStack(
         [
           HStack([
