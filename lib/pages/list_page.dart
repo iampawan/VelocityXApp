@@ -22,9 +22,9 @@ class ListPage extends StatelessWidget {
                 .semiBold
                 .make(),
             InlineCodeBox(InlineCodeBoxText("VelocityDiscList")),
-            " ".text.make(),
+            10.widthBox,
             InlineCodeBox(InlineCodeBoxText("VelocityDecimalList")),
-            ".".text.make(),
+            10.widthBox,
           ]),
           20.heightBox,
           "VelocityDiscList".text.xl2.blue800.semiBold.make(),
@@ -35,16 +35,16 @@ class ListPage extends StatelessWidget {
           10.heightBox,
           "Here is the example of VelocityDiscList".text.make(),
           10.heightBox,
-
           Wrap(
               runSpacing: 20,
               spacing: 20,
               alignment: WrapAlignment.start,
               direction: Axis.horizontal,
               children: <Widget>[
-                CodeBox(CodeBoxText("VelocityDiscList([\n\t\t  List<String> \n\t],\n); \n\nfor Eg. \n\nVelocityDiscList([\n\tfor (var i = 1; i <= 10; i++) ...[\n\t\t\"I am at \$i inside VelocityDiscList\" \n\t]\n);")).w(width + 500),
+                CodeBox(CodeBoxText(
+                        "VelocityDiscList([\n\t\t  List<String> \n\t],\n); \n\nfor Eg. \n\nVelocityDiscList([\n\tfor (var i = 1; i <= 10; i++) ...[\n\t\t\"I am at \$i inside VelocityDiscList\" \n\t]\n);"))
+                    .w(width + 500),
               ]),
-          
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,
@@ -62,16 +62,16 @@ class ListPage extends StatelessWidget {
           10.heightBox,
           "Here is the example of VelocityDecimalList".text.make(),
           10.heightBox,
-
           Wrap(
               runSpacing: 20,
               spacing: 20,
               alignment: WrapAlignment.start,
               direction: Axis.horizontal,
               children: <Widget>[
-                CodeBox(CodeBoxText("VelocityDecimalList([\n\t\t  List<String> \n\t],\n); \n\nfor Eg. \n\VelocityDecimalList([\n\tfor (var i = 1; i <= 10; i++) ...[\n\t\t\"I am at \$i inside VelocityDecimalList\" \n\t]\n);")).w(width + 500),
+                CodeBox(CodeBoxText(
+                        "VelocityDecimalList([\n\t\t  List<String> \n\t],\n); \n\nfor Eg. \n\VelocityDecimalList([\n\tfor (var i = 1; i <= 10; i++) ...[\n\t\t\"I am at \$i inside VelocityDecimalList\" \n\t]\n);"))
+                    .w(width + 500),
               ]),
-          
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,

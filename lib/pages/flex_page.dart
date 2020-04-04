@@ -22,22 +22,23 @@ class FlexPage extends StatelessWidget {
               .make(),
           20.heightBox,
           HStack([
-            "Regulary used Flex Widgets are".text.make(),
+            "Regulary used Flex Widgets are ".text.make(),
+            5.widthBox,
             InlineCodeBox(InlineCodeBoxText("VelocityXBlock")),
-            " ".text.make(),
+            10.widthBox,
             InlineCodeBox(InlineCodeBoxText("VelocityXInlineBlock")),
-            " ".text.make(),
+            10.widthBox,
             InlineCodeBox(InlineCodeBoxText("VStack")),
-            " ".text.make(),
+            10.widthBox,
             InlineCodeBox(InlineCodeBoxText("HStack")),
-            " ".text.make(),
+            10.widthBox,
             InlineCodeBox(InlineCodeBoxText("ZStack")),
-            ".".text.make(),
+            10.widthBox,
           ]),
           20.heightBox,
           "VelocityXBlock".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "VelocityXBlock creates a Block Level Element.To cause a child to expand to fill the available horizontal space."
+          "VelocityXBlock creates a Block Level Element. To cause a child to expand to fill the available horizontal space."
               .text
               .make(),
           10.heightBox,
@@ -66,7 +67,7 @@ class FlexPage extends StatelessWidget {
           30.heightBox,
           "VelocityXInlineBlock".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "VelocityXInlineBlock creates a Inline Block Level Element.A widget that displays its children in a horizontal array."
+          "VelocityXInlineBlock creates a Inline Block Level Element. A widget that displays its children in a horizontal array."
               .text
               .make(),
           10.heightBox,
@@ -113,7 +114,7 @@ class FlexPage extends StatelessWidget {
           20.heightBox,
           "VStack".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "VStack is a widget that displays its children in a vertical array.VStack is basically an alternative to a Column Widget in a VelocityX.The best example of VStack is the Current page which your viewing."
+          "VStack is a widget that displays its children in a vertical array. VStack is basically an alternative to a Column Widget in a VelocityX.The best example of VStack is the Current page which your viewing."
               .text
               .make(),
           10.heightBox,
@@ -147,7 +148,7 @@ class FlexPage extends StatelessWidget {
           20.heightBox,
           "HStack".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "HStack is a widget that displays its children in a Horizontal array.VStack is basically an alternative to a Row Widget in a VelocityX."
+          "HStack is a widget that displays its children in a Horizontal array. VStack is basically an alternative to a Row Widget in a VelocityX."
               .text
               .make(),
           10.heightBox,
@@ -181,7 +182,7 @@ class FlexPage extends StatelessWidget {
           20.heightBox,
           "ZStack".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "ZStack is a widget that overlaps and displays its children in a simple way,for example having some text and an image or having one VelocityBox on anthore .Full control can be taken by using normal flutter widgets inside ZStack Widget."
+          "ZStack is a widget that overlaps and displays its children in a simple way, for example having some text and an image or having one VelocityBox on anthore. Full control can be taken by using normal flutter widgets inside ZStack Widget."
               .text
               .make(),
           10.heightBox,
@@ -219,12 +220,8 @@ class FlexPage extends StatelessWidget {
                   .make(),
             )
           ]),
-
-          
         ],
       ).p16().scrollVertical(physics: BouncingScrollPhysics()),
     );
   }
 }
-
-

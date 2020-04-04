@@ -23,6 +23,6 @@ class InlineCodeBoxText extends StatelessWidget {
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return data.selectableText.wide.sm.white.bold.make(key: key);
+    return data.selectableText.wide.sm.white.bold.make(key: key).px2();
   }
 }
