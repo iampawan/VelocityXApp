@@ -16,7 +16,14 @@ class SplashPage extends StatelessWidget {
           [
             VelocityDevice(
                 mobile: [
-                  "Velocity".richText.white.xl.extraBold.size(30).maxLines(1).withTextSpanChildren(
+                  "Velocity"
+                      .richText
+                      .white
+                      .xl
+                      .extraBold
+                      .size(30)
+                      .maxLines(1)
+                      .withTextSpanChildren(
                     [
                       "X".textSpan.blue500.extraBold.size(40).make(),
                     ],
@@ -29,7 +36,14 @@ class SplashPage extends StatelessWidget {
                   crossAlignment: CrossAxisAlignment.center,
                 ),
                 web: [
-                  "Velocity".richText.white.xl.extraBold.size(50).maxLines(1).withTextSpanChildren(
+                  "Velocity"
+                      .richText
+                      .white
+                      .xl
+                      .extraBold
+                      .size(50)
+                      .maxLines(1)
+                      .withTextSpanChildren(
                     [
                       "X".textSpan.blue500.extraBold.size(60).make(),
                     ],
@@ -43,7 +57,8 @@ class SplashPage extends StatelessWidget {
                 )),
             20.heightBox,
             RaisedButton(
-              onPressed: () => context.nav.pushReplacementNamed(HomePage.routeName),
+              onPressed: () =>
+                  context.nav.pushReplacementNamed(HomePage.routeName),
               padding: const EdgeInsets.symmetric(
                 vertical: VelocityX.dp20,
                 horizontal: VelocityX.dp64,
@@ -54,7 +69,9 @@ class SplashPage extends StatelessWidget {
               child: VelocityApp.getStartedText.text.center.white.make(),
             ),
           ]
-              .vStack(crossAlignment: CrossAxisAlignment.center, alignment: MainAxisAlignment.center)
+              .vStack(
+                  crossAlignment: CrossAxisAlignment.center,
+                  alignment: MainAxisAlignment.center)
               .scrollVertical()
               .centered()
               .p16()
@@ -71,7 +88,16 @@ class SplashPage extends StatelessWidget {
               LineAwesomeIcons.github,
               size: 50,
               color: Colors.white,
-            ).animatedBox.width(120).height(120).alignCenter.roundedFull.gray800.neumorphic().make().click(() {
+            )
+                .animatedBox
+                .width(80)
+                .height(80)
+                .alignCenter
+                .roundedFull
+                .gray800
+                .neumorphic()
+                .make()
+                .click(() {
               launch("https://github.com/iampawan/VelocityX");
             }).make(),
           ),
@@ -82,7 +108,16 @@ class SplashPage extends StatelessWidget {
               LineAwesomeIcons.code,
               size: 50,
               color: Colors.white,
-            ).animatedBox.width(120).height(120).alignCenter.roundedFull.gray800.neumorphic().make().click(() {
+            )
+                .animatedBox
+                .width(80)
+                .height(80)
+                .alignCenter
+                .roundedFull
+                .gray800
+                .neumorphic()
+                .make()
+                .click(() {
               launch("https://github.com/iampawan/VelocityXApp");
             }).make(),
           ),
@@ -92,7 +127,18 @@ class SplashPage extends StatelessWidget {
             location: BannerLocation.topStart,
           ),
           Positioned(
-            child: "Made with Flutter using VelocityX".text.xl.white.center.make().box.p16.rounded.gray800.neumorphic(curve: VelocityCurve.convex).make(),
+            child: "Made with Flutter using VelocityX"
+                .text
+                .xl
+                .white
+                .center
+                .make()
+                .box
+                .p16
+                .rounded
+                .gray800
+                .neumorphic(curve: VelocityCurve.convex)
+                .make(),
             bottom: 0.0,
           )
         ],
