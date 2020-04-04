@@ -4,7 +4,9 @@ import 'package:velocity_x/velocity_x.dart';
 import 'package:velocityx_app/pages/box_page.dart';
 import 'package:velocityx_app/pages/card_page.dart';
 import 'package:velocityx_app/pages/colors_page.dart';
+import 'package:velocityx_app/pages/flex_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
+import 'package:velocityx_app/pages/list_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
 import 'package:velocityx_app/pages/size_box.dart';
 import 'package:velocityx_app/pages/splash_page.dart';
@@ -39,6 +41,8 @@ class MyApp extends StatelessWidget {
         BoxPage.routeName: (context) => BoxPage(),
         CardPage.routeName: (context) => CardPage(),
         SizeBoxPage.routeName: (context) => SizeBoxPage(),
+        FlexPage.routeName:(context)=>FlexPage(),
+        ListPage.routeName:(context)=>ListPage()
       },
     );
   }
