@@ -85,7 +85,7 @@ class PaddingPage extends StatelessWidget {
                 CodeBox(CodeBoxText(
                     "anywidget.p{number}()\n\neg: Text().p8()\n\nIt will give 8px paddings from all directions.")),
                 "Other available paddings".text.xl.bold.blue800.make(),
-                VelocityDiscList(
+                VxDiscList(
                   [
                     "p0()",
                     "p1()",
@@ -112,7 +112,7 @@ class PaddingPage extends StatelessWidget {
                 CodeBox(CodeBoxText(
                     "anywidget.px{number}\n\neg: Text().px8()\n\nIt will give 8px horizontally.")),
                 "Other available paddings".text.xl.bold.blue800.make(),
-                VelocityDiscList(
+                VxDiscList(
                   [
                     "px0()",
                     "px1()",
@@ -139,7 +139,7 @@ class PaddingPage extends StatelessWidget {
                 CodeBox(CodeBoxText(
                     "anywidget.py{number}\n\neg: Text().py16()\n\nIt will give 16px vertically.")),
                 "Other available paddings".text.xl.bold.blue800.make(),
-                VelocityDiscList(
+                VxDiscList(
                   [
                     "py0()",
                     "py1()",

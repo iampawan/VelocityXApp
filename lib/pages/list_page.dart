@@ -21,19 +21,19 @@ class ListPage extends StatelessWidget {
                 .xl
                 .semiBold
                 .make(),
-            InlineCodeBox(InlineCodeBoxText("VelocityDiscList")),
+            InlineCodeBox(InlineCodeBoxText("VxDiscList")),
             10.widthBox,
-            InlineCodeBox(InlineCodeBoxText("VelocityDecimalList")),
+            InlineCodeBox(InlineCodeBoxText("VxDecimalList")),
             10.widthBox,
           ]),
           20.heightBox,
-          "VelocityDiscList".text.xl2.blue800.semiBold.make(),
+          "VxDiscList".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "VelocityDiscList is used to generate an unordered list which will be having a disc before your list label as shown in the example below "
+          "VxDiscList is used to generate an unordered list which will be having a disc before your list label as shown in the example below "
               .text
               .make(),
           10.heightBox,
-          "Here is the example of VelocityDiscList".text.make(),
+          "Here is the example of VxDiscList".text.make(),
           10.heightBox,
           Wrap(
               runSpacing: 20,
@@ -42,25 +42,25 @@ class ListPage extends StatelessWidget {
               direction: Axis.horizontal,
               children: <Widget>[
                 CodeBox(CodeBoxText(
-                        "VelocityDiscList([\n\t\t  List<String> \n\t],\n); \n\nfor Eg. \n\nVelocityDiscList([\n\tfor (var i = 1; i <= 10; i++) ...[\n\t\t\"I am at \$i inside VelocityDiscList\" \n\t]\n);"))
+                        "VxDiscList([\n\t\t  List<String> \n\t],\n); \n\nfor Eg. \n\nVxDiscList([\n\tfor (var i = 1; i <= 10; i++) ...[\n\t\t\"I am at \$i inside VxDiscList\" \n\t]\n);"))
                     .w(width + 500),
               ]),
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,
-          VelocityDiscList([
+          VxDiscList([
             for (var i = 1; i <= 10; i++) ...[
-              "I am at $i inside VelocityDiscList"
+              "I am at $i inside VxDiscList"
             ]
           ]),
           20.heightBox,
-          "VelocityDecimalList".text.xl2.blue800.semiBold.make(),
+          "VxDecimalList".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "VelocityDecimalList is used to generate an ordered list which will be having a Decimal number before your list label as shown in the example below "
+          "VxDecimalList is used to generate an ordered list which will be having a Decimal number before your list label as shown in the example below "
               .text
               .make(),
           10.heightBox,
-          "Here is the example of VelocityDecimalList".text.make(),
+          "Here is the example of VxDecimalList".text.make(),
           10.heightBox,
           Wrap(
               runSpacing: 20,
@@ -69,15 +69,15 @@ class ListPage extends StatelessWidget {
               direction: Axis.horizontal,
               children: <Widget>[
                 CodeBox(CodeBoxText(
-                        "VelocityDecimalList([\n\t\t  List<String> \n\t],\n); \n\nfor Eg. \n\VelocityDecimalList([\n\tfor (var i = 1; i <= 10; i++) ...[\n\t\t\"I am at \$i inside VelocityDecimalList\" \n\t]\n);"))
+                        "VxDecimalList([\n\t\t  List<String> \n\t],\n); \n\nfor Eg. \n\VxDecimalList([\n\tfor (var i = 1; i <= 10; i++) ...[\n\t\t\"I am at \$i inside VxDecimalList\" \n\t]\n);"))
                     .w(width + 500),
               ]),
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,
-          VelocityDecimalList([
+          VxDecimalList([
             for (var i = 1; i <= 10; i++) ...[
-              "I am at $i inside VelocityDecimalList"
+              "I am at $i inside VxDecimalList"
             ]
           ])
         ],

@@ -17,7 +17,7 @@ class BoxPage extends StatelessWidget {
           "When you are done with the box properties then use .make() to complete it as a widget.".text.xl2.blue800.semiBold.make(),
           10.heightBox,
           "Note 2:".text.bold.make(),
-          "Use .box to use it with any widget & VelocityBox() to use it separately.".text.xl2.blue800.semiBold.make(),
+          "Use .box to use it with any widget & VxBox() to use it separately.".text.xl2.blue800.semiBold.make(),
           20.heightBox,
           "Box".text.xl2.make(),
           10.heightBox,
@@ -27,19 +27,20 @@ class BoxPage extends StatelessWidget {
           "You can use velocityx box directly as well.".text.make(),
           CodeBox(
             CodeBoxText(
-                "VelocityBox({child:anychild}).red500\n\neg: VelocityBox().red500.round.make()\n\nIt will produce a box with color as red500 and rounded shape."),
+                "VxBox({child:anychild}).red500\n\neg: VxBox().red500.round.make()\n\nIt will produce a box with color as red500 and rounded shape."),
           ),
           20.heightBox,
           "Height & Width".text.xl2.make(),
           10.heightBox,
           "Use height() & width() methods of the box".text.make(),
           10.heightBox,
-          CodeBox(CodeBoxText("VelocityBox().width(px)\n\neg: VelocityBox().width(100).make()\n\nSets box width as 100px")),
-          CodeBox(CodeBoxText("VelocityBox().height(px)\n\neg: VelocityBox().height(100).make()\n\nSets box height as 100px")),
+          
+          CodeBox(CodeBoxText("VxBox().width(px)\n\neg: VxBox().width(100).make()\n\nSets box width as 100px")),
+          CodeBox(CodeBoxText("VxBox().height(px)\n\neg: VxBox().height(100).make()\n\nSets box height as 100px")),
           CodeBox(CodeBoxText("box.width({px}.height(px)\n\neg: box.width(500).height(100).make()\n\nSets box width as 500px & height as 100px")),
           10.heightBox,
           "Note:".text.bold.make(),
-          "You can use VelocityX class to provide predefined EdgeInsets value.\n\neg: VelocityX.m12 -> all\n\neg: VelocityX.mV12 -> Vertical\n\neg: VelocityX.mH12 -> Horizontal"
+          "You can use VelocityX class to provide predefined EdgeInsets value.\n\neg: Vx.m12 -> all\n\neg: Vx.mV12 -> Vertical\n\neg: Vx.mH12 -> Horizontal"
               .text
               .xl2
               .blue800
@@ -47,7 +48,7 @@ class BoxPage extends StatelessWidget {
               .make(),
           20.heightBox,
           "Note:".text.bold.make(),
-          "You can use VelocityX class to provide predefined pixel values too.\n\neg: VelocityX.dp0 to VelocityX.dp64"
+          "You can use VelocityX class to provide predefined pixel values too.\n\neg: Vx.dp0 to Vx.dp64"
               .text
               .xl2
               .blue800
@@ -59,9 +60,9 @@ class BoxPage extends StatelessWidget {
           "Use padding() & margin() methods of the box".text.make(),
           10.heightBox,
           CodeBox(CodeBoxText(
-              "VelocityBox().padding(EdgeInsetsGeometry val)\n\neg: VelocityBox().padding(VelocityX.m12).make()\n\nSets box padding as 12px\n\neg: VelocityBox().py16.make()\n\nSets box padding as 16px vertically. You can use all predefined paddings as in Padding Notes.")),
+              "VxBox().padding(EdgeInsetsGeometry val)\n\neg: VxBox().padding(Vx.m12).make()\n\nSets box padding as 12px\n\neg: VxBox().py16.make()\n\nSets box padding as 16px vertically. You can use all predefined paddings as in Padding Notes.")),
           CodeBox(CodeBoxText(
-              "VelocityBox().margin(EdgeInsetsGeometry val)\n\neg: VelocityBox().margin(VelocityX.m12).make()\n\nSets box margin as 12px")),
+              "VxBox().margin(EdgeInsetsGeometry val)\n\neg: VxBox().margin(Vx.m12).make()\n\nSets box margin as 12px")),
           20.heightBox,
           "Color".text.xl2.make(),
           10.heightBox,
@@ -78,7 +79,7 @@ class BoxPage extends StatelessWidget {
           10.heightBox,
           "VelocityX offers many predefined alignments as box properties".text.make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "alignTopCenter    - Alignment.topCenter",
               "alignTopLeft      - Alignment.topLeft",
@@ -90,7 +91,7 @@ class BoxPage extends StatelessWidget {
               "alignBottomLeft   - Alignment.bottomLeft",
               "alignBottomRight  - Alignment.bottomRight",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText("eg: Text('VelocityX').box.alignCenter.make();\n\nSets the alignment as Center")),
           10.heightBox,
@@ -102,7 +103,7 @@ class BoxPage extends StatelessWidget {
           10.heightBox,
           "VelocityX offers many predefined shadows as box properties".text.make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "shadow",
               "shadowXs",
@@ -112,7 +113,7 @@ class BoxPage extends StatelessWidget {
               "shadowXl",
               "shadow2xl",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText("eg: Text('Velocityx').box.shadow2xl.make();\n\nSets the shadow as 2xl")),
           10.heightBox,
@@ -130,7 +131,7 @@ class BoxPage extends StatelessWidget {
           10.heightBox,
           "VelocityX offers many predefined rounded radius as box properties".text.make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "roundedNone - 0",
               "roundedSM   - 7.5",
@@ -138,7 +139,7 @@ class BoxPage extends StatelessWidget {
               "roundedLg   - 30",
               "roundedFull - circle",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText("eg: Text('VelocityX').box.roundedLg.make();\n\nSets the border radius as 15")),
           10.heightBox,
@@ -150,13 +151,13 @@ class BoxPage extends StatelessWidget {
           10.heightBox,
           "VelocityX offers many predefined gradient as box properties".text.make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "linearGradient",
               "radialGradient",
               "sweepGradient",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText(
               "eg: Text('VelocityX').box.linearGradient([Colors.red,Colors.orange]).make();\n\nSets the linear gradient with these two colors")),
