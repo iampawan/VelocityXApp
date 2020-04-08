@@ -72,7 +72,7 @@ class CardPage extends StatelessWidget {
           10.heightBox,
           "VelocityX offers many predefined rounded radius as card properties".text.make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "roundedNone - 0",
               "roundedSM   - 7.5",
@@ -80,7 +80,7 @@ class CardPage extends StatelessWidget {
               "roundedLg   - 30",
               "roundedFull - circle",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText("eg: Text('Velocityx').card.roundedLg.make();\n\nSets the border radius as 15")),
           10.heightBox,

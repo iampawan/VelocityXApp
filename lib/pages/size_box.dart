@@ -38,7 +38,7 @@ class SizeBoxPage extends StatelessWidget {
                 "To give % of width to a widget".text.xl.bold.blue800.make(),
                 CodeBox(CodeBoxText("anywidget.w{number}()\n\neg: Text().w8(context)\n\nIt will give 8% width.")),
                 "Other available widths".text.xl.bold.blue800.make(),
-                VelocityDiscList(
+                VxDiscList(
                   [
                     "w0(context)",
                     "w1(context)",
@@ -70,7 +70,7 @@ class SizeBoxPage extends StatelessWidget {
                 "To give % of height to a widget".text.xl.bold.blue800.make(),
                 CodeBox(CodeBoxText("anywidget.h{number}\n\neg: Text().h8(context)\n\nIt will give 8% height.")),
                 "Other available heights".text.xl.bold.blue800.make(),
-                VelocityDiscList(
+                VxDiscList(
                   [
                     "h0(context)",
                     "h1(context)",
@@ -102,7 +102,7 @@ class SizeBoxPage extends StatelessWidget {
                 "To give % of width & height both to a widget".text.xl.bold.blue800.make(),
                 CodeBox(CodeBoxText("anywidget.wh{number}\n\neg: Text().wh(8)\n\nIt will give 8% height.")),
                 "Other available WidthHeight".text.xl.bold.blue800.make(),
-                VelocityDiscList(
+                VxDiscList(
                   [
                     "wh0(context)",
                     "wh1(context)",

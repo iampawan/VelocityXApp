@@ -10,11 +10,11 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: VelocityX.gray800,
+      color: Vx.gray800,
       child: ZStack(
         [
           [
-            VelocityDevice(
+            VxDevice(
                 mobile: [
                   "Velocity"
                       .richText
@@ -60,11 +60,11 @@ class SplashPage extends StatelessWidget {
               onPressed: () =>
                   context.nav.pushReplacementNamed(HomePage.routeName),
               padding: const EdgeInsets.symmetric(
-                vertical: VelocityX.dp20,
-                horizontal: VelocityX.dp64,
+                vertical: Vx.dp20,
+                horizontal: Vx.dp64,
               ),
-              shape: VelocityX.roundedSm,
-              color: VelocityX.blue500,
+              shape: Vx.roundedSm,
+              color: Vx.blue500,
               // borderSide: BorderSide(color: Colors.white),
               child: VelocityApp.getStartedText.text.center.white.make(),
             ),
@@ -79,7 +79,7 @@ class SplashPage extends StatelessWidget {
               .width(context.screenWidth / 1.5)
               .height(context.percentHeight * 40)
               .roundedLg
-              .neumorphic(color: VelocityX.gray800)
+              .neumorphic(color: Vx.gray800)
               .makeCentered(),
           Positioned(
             top: 0.0,
@@ -123,7 +123,7 @@ class SplashPage extends StatelessWidget {
           ),
           Banner(
             message: "Open Source",
-            color: VelocityX.gray800,
+            color: Vx.gray800,
             location: BannerLocation.topStart,
           ),
           Positioned(
@@ -137,7 +137,7 @@ class SplashPage extends StatelessWidget {
                 .p16
                 .rounded
                 .gray800
-                .neumorphic(curve: VelocityCurve.convex)
+                .neumorphic(curve: VxCurve.convex)
                 .make(),
             bottom: 0.0,
           )

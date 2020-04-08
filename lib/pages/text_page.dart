@@ -45,7 +45,7 @@ class TextPage extends StatelessWidget {
               .text
               .make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "xs    - Extra Small (scaleFactor 0.75)",
               "sm    - Small (scaleFactor 0.875)",
@@ -58,7 +58,7 @@ class TextPage extends StatelessWidget {
               "xl5   - 5 Extra Large (scaleFactor 3)",
               "xl6   - 6 Extra Large (scaleFactor 4)",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText(
               "eg: 'Velocityx'.text.xl2.make();\n\nSets the fontSize as 2 Extra Large")),
@@ -74,7 +74,7 @@ class TextPage extends StatelessWidget {
               .text
               .make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "hairLine    - Font Weight 100",
               "thin        - Font Weight 200",
@@ -86,7 +86,7 @@ class TextPage extends StatelessWidget {
               "extraBold   - Font Weight 800",
               "extraBlack  - Font Weight 900",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText(
               "eg: 'Velocityx'.text.bold.make();\n\nSets the fontweight as bold(w700)")),
@@ -105,14 +105,14 @@ class TextPage extends StatelessWidget {
               .text
               .make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "center    - TextAlign.center",
               "start     - TextAlign.start",
               "end       - TextAlign.end",
               "justify   - TextAlign.justify",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText(
               "eg: 'Velocityx'.text.center.make();\n\nSets the alignment of the text as center")),
@@ -123,7 +123,7 @@ class TextPage extends StatelessWidget {
               .text
               .make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "tightest    - Letter Spacing -3.0",
               "tighter     - Letter Spacing -2.0",
@@ -132,7 +132,7 @@ class TextPage extends StatelessWidget {
               "wider       - Letter Spacing 2.0",
               "widest      - Letter Spacing 3.0",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText(
               "eg: 'Velocityx'.text.wide.make();\n\nSets the letter spacing as 1.0 of the text")),
@@ -147,13 +147,13 @@ class TextPage extends StatelessWidget {
               .text
               .make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "underline    - TextDecoration.underline",
               "lineThrough  - TextDecoration.lineThrough",
               "overline     - TextDecoration.overline",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText(
               "eg: 'Velocityx'.text.underline.make();\n\nSets the text to undelined.")),
@@ -164,14 +164,14 @@ class TextPage extends StatelessWidget {
               .text
               .make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "heightTight    - Line Height 0.75",
               "heightSnug     - Line Height 0.875",
               "heightRelaxed  - Line Height 1.25",
               "heightLoose    - Line Height 1.5",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText(
               "eg: 'Velocityx'.text.heightSnug.make();\n\nSets the line height as 0.875 of the text")),
@@ -186,14 +186,14 @@ class TextPage extends StatelessWidget {
               .text
               .make(),
           10.heightBox,
-          CodeBox(VelocityDiscList(
+          CodeBox(VxDiscList(
             [
               "uppercase    - WELCOME TO VELOCITYX",
               "lowercase    - welcome to velocityx",
               "capitalize   - Welcome To Velocityx",
               "hidePartial  - ***** To Velocityx",
             ],
-            color: VelocityX.whiteColor,
+            color: Vx.white,
           )),
           CodeBox(CodeBoxText(
               "eg: 'Velocityx'.text.lowercase.make();\n\nSets the text as lowercase - velocityx")),

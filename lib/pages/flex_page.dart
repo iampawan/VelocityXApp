@@ -24,9 +24,9 @@ class FlexPage extends StatelessWidget {
           HStack([
             "Regulary used Flex Widgets are ".text.make(),
             5.widthBox,
-            InlineCodeBox(InlineCodeBoxText("VelocityXBlock")),
+            InlineCodeBox(InlineCodeBoxText("VxBlock")),
             10.widthBox,
-            InlineCodeBox(InlineCodeBoxText("VelocityXInlineBlock")),
+            InlineCodeBox(InlineCodeBoxText("VxInlineBlock")),
             10.widthBox,
             InlineCodeBox(InlineCodeBoxText("VStack")),
             10.widthBox,
@@ -36,13 +36,13 @@ class FlexPage extends StatelessWidget {
             10.widthBox,
           ]),
           20.heightBox,
-          "VelocityXBlock".text.xl2.blue800.semiBold.make(),
+          "VxBlock".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "VelocityXBlock creates a Block Level Element. To cause a child to expand to fill the available horizontal space."
+          "VxBlock creates a Block Level Element. To cause a child to expand to fill the available horizontal space."
               .text
               .make(),
           10.heightBox,
-          "Here is the example of VelocityXBlock".text.make(),
+          "Here is the example of VxBlock".text.make(),
           10.heightBox,
           Wrap(
               runSpacing: 20,
@@ -51,27 +51,27 @@ class FlexPage extends StatelessWidget {
               direction: Axis.horizontal,
               children: <Widget>[
                 CodeBox(CodeBoxText(
-                        'VelocityXBlock(\n\tchildren: <Widget>[\n\t\t\tVelocityBox(    //Using Velocity box to get blue background for block Element.\n\t\t\t\tchild: \"I am inside VelocityXBlock\".text.make().p20()).blue300.make()\n\t\t],\n\t)'))
+                        'VxBlock(\n\tchildren: <Widget>[\n\t\t\tVxBox(    //Using Velocity box to get blue background for block Element.\n\t\t\t\tchild: \"I am inside VxBlock\".text.make().p20()).blue300.make()\n\t\t],\n\t)'))
                     .w(width + 500),
               ]),
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,
-          VelocityXBlock(
+          VxBlock(
             children: <Widget>[
-              VelocityBox(child: "I am inside VelocityXBlock".text.make().p20())
+              VxBox(child: "I am inside VxBlock".text.make().p20())
                   .blue300
                   .make()
             ],
           ),
           30.heightBox,
-          "VelocityXInlineBlock".text.xl2.blue800.semiBold.make(),
+          "VxInlineBlock".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "VelocityXInlineBlock creates a Inline Block Level Element. A widget that displays its children in a horizontal array."
+          "VxInlineBlock creates a Inline Block Level Element. A widget that displays its children in a horizontal array."
               .text
               .make(),
           10.heightBox,
-          "Here is the example of VelocityXInlineBlock".text.make(),
+          "Here is the example of VxInlineBlock".text.make(),
           10.heightBox,
           Wrap(
               runSpacing: 20,
@@ -80,30 +80,30 @@ class FlexPage extends StatelessWidget {
               direction: Axis.horizontal,
               children: <Widget>[
                 CodeBox(CodeBoxText(
-                        'VelocityXBlock(\n\tchildren: <Widget>[\n\t\t\tVelocityBox(    //Using Velocity box to get blue background for block Element.\n\t\t\t\tchild: \"I am First Child in VelocityXInlineBlock\".text.make().p20()).blue300.make(),\n\t\t\tVelocityBox( \n\t\t\t\tchild: \"I am Second Child in VelocityXInlineBlock\".text.make().p20()).yellow300.make(),\n\t\t\tVelocityBox(\n\t\t\t\tchild: \"I am Third Child in VelocityXInlineBlock\".text.make().p20()).red300.make(),\n\t\t],\n\t)'))
+                        'VxBlock(\n\tchildren: <Widget>[\n\t\t\tVxBox(    //Using Velocity box to get blue background for block Element.\n\t\t\t\tchild: \"I am First Child in VxInlineBlock\".text.make().p20()).blue300.make(),\n\t\t\tVxBox( \n\t\t\t\tchild: \"I am Second Child in VxInlineBlock\".text.make().p20()).yellow300.make(),\n\t\t\tVxBox(\n\t\t\t\tchild: \"I am Third Child in VxInlineBlock\".text.make().p20()).red300.make(),\n\t\t],\n\t)'))
                     .w(width + 500),
               ]),
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,
-          VelocityXInlineBlock(
+          VxInlineBlock(
             children: <Widget>[
-              VelocityBox(
-                      child: "I am First Child in VelocityXInlineBlock"
+              VxBox(
+                      child: "I am First Child in VxInlineBlock"
                           .text
                           .make()
                           .p20())
                   .blue300
                   .make(),
-              VelocityBox(
-                      child: "I am Second Child in VelocityXInlineBlock"
+              VxBox(
+                      child: "I am Second Child in VxInlineBlock"
                           .text
                           .make()
                           .p20())
                   .yellow300
                   .make(),
-              VelocityBox(
-                      child: "I am Second Child in VelocityXInlineBlock"
+              VxBox(
+                      child: "I am Second Child in VxInlineBlock"
                           .text
                           .make()
                           .p20())
@@ -127,21 +127,21 @@ class FlexPage extends StatelessWidget {
               direction: Axis.horizontal,
               children: <Widget>[
                 CodeBox(CodeBoxText(
-                        'VStack(\n\t\t[\n\t\t\tVelocityBox(child:"I am First element in VStack".text.make().p20()).red300.make(),\n\t\t\tVelocityBox(child:"I am Secondelement in VStack".text.make().p20()).green300.make(),\n\t\t\tVelocityBox(child:"I am Third element in VStack".text.make().p20()).yellow300.make(),\n\t\t],\n)'))
+                        'VStack(\n\t\t[\n\t\t\tVxBox(child:"I am First element in VStack".text.make().p20()).red300.make(),\n\t\t\tVxBox(child:"I am Secondelement in VStack".text.make().p20()).green300.make(),\n\t\t\tVxBox(child:"I am Third element in VStack".text.make().p20()).yellow300.make(),\n\t\t],\n)'))
                     .w(width + 500),
               ]),
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,
           VStack([
-            VelocityBox(child: "I am First element in VStack".text.make().p20())
+            VxBox(child: "I am First element in VStack".text.make().p20())
                 .red300
                 .make(),
-            VelocityBox(
+            VxBox(
                     child: "I am Second element in VStack".text.make().p20())
                 .green300
                 .make(),
-            VelocityBox(child: "I am Third element in VStack".text.make().p20())
+            VxBox(child: "I am Third element in VStack".text.make().p20())
                 .yellow300
                 .make()
           ]),
@@ -161,28 +161,28 @@ class FlexPage extends StatelessWidget {
               direction: Axis.horizontal,
               children: <Widget>[
                 CodeBox(CodeBoxText(
-                        'HStack(\n\t\t[\n\t\t\tVelocityBox(child:"I am First element in HStack".text.make().p20()).red300.make(),\n\t\t\tVelocityBox(child:"I am Secondelement in HStack".text.make().p20()).green300.make(),\n\t\t\tVelocityBox(child:"I am Third element in HStack".text.make().p20()).yellow300.make(),\n\t\t],\n)'))
+                        'HStack(\n\t\t[\n\t\t\tVxBox(child:"I am First element in HStack".text.make().p20()).red300.make(),\n\t\t\tVxBox(child:"I am Secondelement in HStack".text.make().p20()).green300.make(),\n\t\t\tVxBox(child:"I am Third element in HStack".text.make().p20()).yellow300.make(),\n\t\t],\n)'))
                     .w(width + 500),
               ]),
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,
           HStack([
-            VelocityBox(child: "I am First element in VStack".text.make().p20())
+            VxBox(child: "I am First element in VStack".text.make().p20())
                 .red300
                 .make(),
-            VelocityBox(
+            VxBox(
                     child: "I am Second element in VStack".text.make().p20())
                 .green300
                 .make(),
-            VelocityBox(child: "I am Third element in VStack".text.make().p20())
+            VxBox(child: "I am Third element in VStack".text.make().p20())
                 .yellow300
                 .make()
           ]),
           20.heightBox,
           "ZStack".text.xl2.blue800.semiBold.make(),
           10.heightBox,
-          "ZStack is a widget that overlaps and displays its children in a simple way, for example having some text and an image or having one VelocityBox on anthore. Full control can be taken by using normal flutter widgets inside ZStack Widget."
+          "ZStack is a widget that overlaps and displays its children in a simple way, for example having some text and an image or having one VxBox on anthore. Full control can be taken by using normal flutter widgets inside ZStack Widget."
               .text
               .make(),
           10.heightBox,
@@ -195,26 +195,26 @@ class FlexPage extends StatelessWidget {
               direction: Axis.horizontal,
               children: <Widget>[
                 CodeBox(CodeBoxText(
-                        'ZStack(\n\t\t[\n\t\t\tVelocityBox(child:"I am First element in HStack".text.make().p20()).red300.make(),\n\t\t\tPadding(\n\t\t\t\tpadding: const EdgeInsets.all(20.0), \n\t\t\t\tchild: VelocityBox(child: "I am Second element in VStack".text.make().p20()).green300.make(),\n\t\t\t),\n\t\t\tPadding(\n\t\t\t\tpadding: const EdgeInsets.all(20.0), \n\t\t\t\tchild: VelocityBox(child: "I am Second element in VStack".text.make().p20()).green300.make(),\n\t\t\t\n\t\t\t)\n\t\t]\n)'))
+                        'ZStack(\n\t\t[\n\t\t\tVxBox(child:"I am First element in HStack".text.make().p20()).red300.make(),\n\t\t\tPadding(\n\t\t\t\tpadding: const EdgeInsets.all(20.0), \n\t\t\t\tchild: VxBox(child: "I am Second element in VStack".text.make().p20()).green300.make(),\n\t\t\t),\n\t\t\tPadding(\n\t\t\t\tpadding: const EdgeInsets.all(20.0), \n\t\t\t\tchild: VxBox(child: "I am Second element in VStack".text.make().p20()).green300.make(),\n\t\t\t\n\t\t\t)\n\t\t]\n)'))
                     .w(width + 600),
               ]),
           10.heightBox,
           "Working Example of above code snippet".text.bold.make(),
           10.heightBox,
           ZStack([
-            VelocityBox(child: "I am First element in VStack".text.make().p20())
+            VxBox(child: "I am First element in VStack".text.make().p20())
                 .red300
                 .make(),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: VelocityBox(
+              child: VxBox(
                       child: "I am Second element in VStack".text.make().p20())
                   .green300
                   .make(),
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: VelocityBox(
+              child: VxBox(
                       child: "I am Third element in VStack".text.make().p20())
                   .yellow300
                   .make(),
