@@ -7,6 +7,7 @@ import 'package:velocityx_app/pages/colors_page.dart';
 import 'package:velocityx_app/pages/flex_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
 import 'package:velocityx_app/pages/list_page.dart';
+import 'package:velocityx_app/pages/object_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
 import 'package:velocityx_app/pages/size_box.dart';
 import 'package:velocityx_app/pages/splash_page.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         textTheme: GoogleFonts.latoTextTheme(),
         appBarTheme: AppBarTheme(
-            color: VelocityX.whiteColor,
+            color: Vx.white,
             textTheme: GoogleFonts.latoTextTheme().apply(
               bodyColor: Colors.black,
             ),
@@ -42,7 +43,8 @@ class MyApp extends StatelessWidget {
         CardPage.routeName: (context) => CardPage(),
         SizeBoxPage.routeName: (context) => SizeBoxPage(),
         FlexPage.routeName:(context)=>FlexPage(),
-        ListPage.routeName:(context)=>ListPage()
+        ListPage.routeName:(context)=>ListPage(),
+        ObjectPage.routeName:(context)=>ObjectPage()
       },
     );
   }

@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return VelocityScaffold(
-      bgColor: VelocityX.whiteColor,
+      bgColor: Vx.white,
       title: "VelocityX",
       body: VStack(
         [
@@ -25,9 +25,9 @@ class HomePage extends StatelessWidget {
             "There is one golden rule".selectableText.center.xl2.semiBold.make(),
             5.heightBox,
             "Use methods for (widgets & setting a value) and getters for (properties & getting a value)".selectableText.center.bold.blue900.xl.make()
-          ].vStack(crossAlignment: CrossAxisAlignment.center).p8().box.p12.linearGradient([VelocityX.teal200, VelocityX.blue400]).roundedLg.shadowXl.make(),
+          ].vStack(crossAlignment: CrossAxisAlignment.center).p8().box.p12.linearGradient([Vx.teal200, Vx.blue400]).roundedLg.shadowXl.make(),
           20.heightBox,
-          VelocityBox().height(3).blue700.make(),
+          VxBox().height(3).blue700.make(),
           20.heightBox,
           "Getting Started".text.blue700.xl4.extraBold.wider.bold.make(),
           10.heightBox,

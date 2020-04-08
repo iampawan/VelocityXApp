@@ -7,6 +7,7 @@ import 'package:velocityx_app/pages/colors_page.dart';
 import 'package:velocityx_app/pages/flex_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
 import 'package:velocityx_app/pages/list_page.dart';
+import 'package:velocityx_app/pages/object_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
 import 'package:velocityx_app/pages/size_box.dart';
 import 'package:velocityx_app/pages/text_page.dart';
@@ -91,19 +92,20 @@ class VelocityDrawer extends StatelessWidget {
             title: "List".text.white.xl2.make(),
             onTap: () => context.nav.pushReplacementNamed(ListPage.routeName),
           ),
-          "Documentation Pending".text.white.make().p20(),
+         
           ListTile(
             leading: Icon(
               LineAwesomeIcons.align_center,
-              color: VelocityX.gray600,
+              color: Colors.white,
             ),
-            title: "Object".text.gray600.xl2.make(),
-            onTap: () {},
+            title: "Object".text.white.xl2.make(),
+           onTap: () => context.nav.pushReplacementNamed(ObjectPage.routeName),
           ),
+           "Documentation Pending".text.white.make().p20(),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.circle_o_notch,
-              color: VelocityX.gray600,
+              color: Vx.gray600,
             ),
             title: "Opacity".text.gray600.xl2.make(),
             onTap: () {},
@@ -111,7 +113,7 @@ class VelocityDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(
               LineAwesomeIcons.rotate_left,
-              color: VelocityX.gray600,
+              color: Vx.gray600,
             ),
             title: "Transform".text.gray600.xl2.make(),
             onTap: () {},
@@ -119,7 +121,7 @@ class VelocityDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(
               LineAwesomeIcons.code,
-              color: VelocityX.gray600,
+              color: Vx.gray600,
             ),
             title: "Velocity Widgets".text.gray600.xl2.make(),
             onTap: () {},
@@ -127,7 +129,7 @@ class VelocityDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(
               LineAwesomeIcons.wrench,
-              color: VelocityX.gray600,
+              color: Vx.gray600,
             ),
             title: "Utilities".text.gray600.xl2.make(),
             onTap: () {},
@@ -135,7 +137,7 @@ class VelocityDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(
               LineAwesomeIcons.adjust,
-              color: VelocityX.gray600,
+              color: Vx.gray600,
             ),
             title: "Responsive UI".text.gray600.xl2.make(),
             onTap: () {},
