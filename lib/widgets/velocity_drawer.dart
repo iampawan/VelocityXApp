@@ -8,6 +8,7 @@ import 'package:velocityx_app/pages/flex_page.dart';
 import 'package:velocityx_app/pages/home_page.dart';
 import 'package:velocityx_app/pages/list_page.dart';
 import 'package:velocityx_app/pages/object_page.dart';
+import 'package:velocityx_app/pages/opacity_page.dart';
 import 'package:velocityx_app/pages/padding_page.dart';
 import 'package:velocityx_app/pages/size_box.dart';
 import 'package:velocityx_app/pages/text_page.dart';
@@ -101,15 +102,16 @@ class VelocityDrawer extends StatelessWidget {
             title: "Object".text.white.xl2.make(),
            onTap: () => context.nav.pushReplacementNamed(ObjectPage.routeName),
           ),
-           "Documentation Pending".text.white.make().p20(),
           ListTile(
             leading: Icon(
               LineAwesomeIcons.circle_o_notch,
               color: Vx.gray600,
             ),
-            title: "Opacity".text.gray600.xl2.make(),
-            onTap: () {},
+            title: "Opacity".text.white.xl2.make(),
+            onTap: () => context.nav.pushReplacementNamed(OpacityPage.routeName),
           ),
+           "Documentation Pending".text.white.make().p20(),
+
           ListTile(
             leading: Icon(
               LineAwesomeIcons.rotate_left,
