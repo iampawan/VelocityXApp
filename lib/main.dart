@@ -12,6 +12,7 @@ import 'package:velocityx_app/pages/padding_page.dart';
 import 'package:velocityx_app/pages/size_box.dart';
 import 'package:velocityx_app/pages/splash_page.dart';
 import 'package:velocityx_app/pages/text_page.dart';
+import 'package:velocityx_app/pages/transform_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,7 +45,8 @@ class MyApp extends StatelessWidget {
         SizeBoxPage.routeName: (context) => SizeBoxPage(),
         FlexPage.routeName:(context)=>FlexPage(),
         ListPage.routeName:(context)=>ListPage(),
-        ObjectPage.routeName:(context)=>ObjectPage()
+        ObjectPage.routeName:(context)=>ObjectPage(),
+        TransformPage.routeName:(context)=>TransformPage()
       },
     );
   }

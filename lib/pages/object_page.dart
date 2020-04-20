@@ -328,7 +328,7 @@ class ObjectPage extends StatelessWidget {
             .make()
             .h20(context)
             .w24(context),
-      ]).p16().centered().scrollVertical(physics: BouncingScrollPhysics()),
+      ]).p16().scrollVertical(physics: BouncingScrollPhysics()),
     );
   }
 }
